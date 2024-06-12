@@ -1,0 +1,185 @@
+.portfolio {
+  padding-bottom: 90px;
+  padding-top: 75px;
+  background-color: #fafafa;
+}
+.portfolio__description {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.portfolio__description-title {
+  font-size: 2.86rem;
+  margin-bottom: 15px;
+}
+.portfolio__description-text {
+  font-size: 1.43rem;
+  line-height: 1.3em;
+}
+.portfolio-project {
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: relative;
+  max-width: 930px;
+  height: 450px;
+  padding-left: 206.5px;
+}
+.portfolio__project {
+  margin: 0 auto;
+}
+.portfolio__project:not(:last-child) {
+  margin-bottom: 60px;
+}
+.portfolio-project__background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-right-radius: 15px;
+}
+.portfolio-project__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #efefef;
+  height: 100%;
+  width: 435px;
+  padding: 52px 35px;
+  border-top-left-radius: 15px;
+  clip-path: polygon(0px 0px, 435px 0px, 206px 450px, 0px 450px);
+}
+.portfolio-project__content {
+  width: 300px;
+}
+.portfolio-project__name {
+  font-size: 2.14rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #170f1b;
+}
+.portfolio-project__text {
+  width: 190px;
+  overflow: hidden;
+}
+.portfolio-project__box-new {
+  position: absolute;
+  top: 30px;
+  right: -34px;
+  width: 200px;
+  height: 60px;
+  background: #efefef;
+  border: 1px solid rgba(163, 174, 192, 0.7);
+  box-shadow: inset -4px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 15px 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.86rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-project__decoration {
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  z-index: -10;
+  background-color: #170f1b;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+.portfolio-project__hover-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(37, 42, 47, 0.7);
+  border-radius: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: width 0.4s ease-in-out 0.1s;
+  text-align: center;
+}
+.portfolio-project__hover-element-link {
+  text-decoration: underline;
+  color: #dee1e6;
+  font-weight: 700;
+  font-size: 2.14rem;
+  transition: all 0.4s ease-in-out 0.01s;
+}
+.portfolio-project__hover-element-link:hover {
+  color: #1abcfe;
+}
+
+@media (max-width: 767px) {
+  .portfolio {
+    padding: 60px 0;
+  }
+  .portfolio-project {
+    padding-left: 0;
+  }
+  .portfolio-project__box {
+    display: none;
+  }
+  .portfolio-project__decoration {
+    display: none;
+  }
+}
+@media (max-width: 599px) {
+  .portfolio {
+    padding: 40px 0;
+  }
+  .portfolio__description {
+    margin-bottom: 40px;
+  }
+  .portfolio__description-title {
+    font-size: 2.2rem;
+  }
+  .portfolio__description-text {
+    font-size: 1.2rem;
+  }
+  .portfolio-project {
+    height: 300px;
+  }
+  .portfolio__project:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .portfolio-project__hover-element-link {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 459px) {
+  .portfolio__description-text {
+    font-size: 1rem;
+  }
+  .portfolio-project {
+    height: 230px;
+  }
+  .portfolio__project:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .portfolio-project__box-new {
+    display: none;
+  }
+  .portfolio__description-title {
+    font-size: 1.8rem;
+  }
+  .portfolio-project__hover-element-link {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 349px) {
+  .portfolio-project {
+    height: 200px;
+  }
+  .portfolio__project:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+/* Проект належить https://github.com/Stepan552 */
